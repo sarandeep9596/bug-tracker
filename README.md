@@ -35,6 +35,10 @@ git clone https://github.com/sarandeep9596/bug-tracker.git
 cd react-bug-tracker
 
 # Install dependencies
+
+## Demo credentials
+- Developer: dev@example.com / 123
+- Manager: mgr@example.com / 456
 npm install
 
 # Start the development server
