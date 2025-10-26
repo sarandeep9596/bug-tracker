@@ -1,23 +1,41 @@
+React Bug Tracker
 
-## Features
-- Mock authentication (demo users in `src/data/users.json`)
-- Role-based UI: Developer / Manager
-- Task CRUD using `useReducer` + Context
-- Time tracker per task (basic start/stop)
-- Trend chart (Recharts) sample
-- LocalStorage persistence with demo data on first load
+A modern Bug Tracking Dashboard built with **React + Vite**, allowing developers and managers to manage tasks efficiently with filtering, sorting, and categorized task boards (Open, In Progress, Pending, Closed).
 
-## Quick start
-Requirements: Node.js (16+), npm
 
+ Features
+
+- Task creation with title, description, priority, status, and due dates
+- Modal-based task form (no page scroll)
+- Task board divided into **Open**, **In Progress**, **Pending**, and **Closed**
+- Search + Filter + Sort options
+- Role-based views (Developer / Manager)
+- Built using **React + Context API + Tailwind**
+
+ Tech Stack
+
+- **Frontend:** React (Vite)
+- **Styling:** Tailwind CSS
+- **State Management:** React Context API
+- **Build Tool:** Vite
+- **Hosting:** Vercel / Netlify
+
+ Run Locally
+
+ Prerequisites
+- Node.js (v18 or higher)
+- npm
+
+ Steps
 ```bash
+# Clone the repository
+git clone https://github.com/sarandeep9596/bug-tracker.git
+
+# Go into project folder
+cd react-bug-tracker
+
+# Install dependencies
 npm install
+
+# Start the development server
 npm run dev
-```
-
-## Demo credentials
-- Developer: dev@example.com / 123
-- Manager: mgr@example.com / 456
-
-## Notes
-This is a starter scaffold. Install dependencies with `npm install` and run `npm run dev`.
