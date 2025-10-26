@@ -1,0 +1,103 @@
+/* === Navbar === */
+.navbar {
+  height: 60px;
+  background: rgb(202, 222, 232);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo {
+  width: 120px;
+  height: 50px;
+ border-radius: 10px;
+}
+
+.navbar-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* === Sidebar === */
+.sidebar {
+  width: 200px;
+  background: #df6db9;
+  height: calc(100vh - 60px);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-right: 1px solid #e2e8f0;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #146dea;
+  transition: background 0.2s ease;
+}
+
+.sidebar-item:hover {
+  background: #e2e8f0;
+}
+
+/* === Main Layout === */
+.layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #f9fafb;
+  min-height: calc(100vh - 60px);
+}

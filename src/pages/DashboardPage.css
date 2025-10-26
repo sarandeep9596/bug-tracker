@@ -1,0 +1,102 @@
+/* === Dashboard Layout Styles === */
+
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f8fafc;
+  color: #111827;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar + Main Layout */
+.layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Sidebar takes fixed width */
+.layout .sidebar {
+  flex-shrink: 0;
+  width: 140px;
+  background-color: #ea89ea;
+  color: white;
+  height: 100%;
+  border-radius: 2%;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1;
+  padding: 20px 24px;
+  overflow-y: auto;
+  background: #f9fafb;
+}
+
+/* Header (Dashboard — Username and New Task button) */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* Task form spacing */
+.taskform-wrapper {
+  margin-bottom: 12px;
+}
+
+/* Grid layout for tasks + stats */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 16px;
+}
+
+/* Common card style */
+.card {
+  background: white;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Stats card */
+.stats-card {
+  width: 400px;
+}
+
+/* Chart title spacing */
+.chart-title {
+  margin-top: 20px;
+}
+
+/* Buttons */
+.btn {
+  background: #2563eb;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-card {
+    width: 100%;
+  }
+
+  .layout .sidebar {
+    display: none;
+  }
+}

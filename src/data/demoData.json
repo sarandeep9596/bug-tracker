@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+      "id": "t1",
+      "title": "Fix login redirect",
+      "description": "Login redirects to wrong page",
+      "priority": "high",
+      "status": "open",
+      "reporterId": "u1",
+      "assigneeId": "u1",
+      "createdAt": "2025-10-01T09:00:00.000Z",
+      "totalTime": 0
+    },
+    {
+      "id": "t2",
+      "title": "UI bug on dashboard",
+      "description": "Cards overlap on small screens",
+      "priority": "medium",
+      "status": "in_progress",
+      "reporterId": "u1",
+      "assigneeId": "u1",
+      "createdAt": "2025-10-02T10:00:00.000Z",
+      "totalTime": 3600
+    }
+  ],
+  "timelogs": [
+    {
+      "id": "l1",
+      "taskId": "t2",
+      "userId": "u1",
+      "start": "2025-10-02T10:00:00.000Z",
+      "end": "2025-10-02T11:00:00.000Z",
+      "duration": 3600
+    }
+  ]
+}

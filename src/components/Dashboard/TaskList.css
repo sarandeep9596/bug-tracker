@@ -1,0 +1,78 @@
+/* === TaskList (Kanban) Styles === */
+.tasklist-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+/* 🔍 Filter Row */
+.task-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 6px 10px;
+
+}
+
+.filter-input {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  width:140px;
+}
+
+.filter-select {
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+}
+
+/* 🧩 Kanban Grid Layout */
+.kanban-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* 🧱 Kanban Columns */
+.kanban-column {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 200px;
+}
+
+.kanban-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  color: #374151;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 4px;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .kanban-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .kanban-grid {
+    grid-template-columns: 1fr;
+  }
+}
